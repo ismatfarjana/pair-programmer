@@ -24,11 +24,15 @@
 ================================================== -->
 <script src="./studentsCreate.js" defer></script>
 
+
+
+
 </head>
 
 <!-- Body
 ================================================== -->
 <body id="body-background">
+
 
 	<!-- Sect: Header / Navigation
 	================================================== -->	
@@ -137,111 +141,30 @@
 		<div class="container-content">
 			<!-- Content: New Section -->
 			<div class="content-section">
-				<div class="content-section-header"><h3>create new student</h3></div>
-				<div class="content-section-columns">
-					<div class="content-section-left">
-						<form action="" method="post" id="" class="student-create" autocomplete="off">
-							<!-- Content: New Row -->
-							<div class="content-section-row">
-								<div class="content-section-row-label">first name</div>
-								<div id="" class="content-section-row-field">
-									<input type="text" name="firstName" id="" class="student-create" placeholder="First Name" required>
-								</div>
-							</div>
-							<!-- Content End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row">
-								<div class="content-section-row-label">last name</div>
-								<div id="" class="content-section-row-field">
-									<input type="text" name="lastName" id="" class="student-create" placeholder="Last Name" required>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">username</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">
-									<input type="text" name="username" id="" class="student-create" placeholder="Username" required>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">email address</div>
-								<div id="content-section-row-field-downcase" class="content-section-row-field content-section-row-field-card">
-									<input type="email" name="email" id="" class="student-create" placeholder="Email Address" required>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">mobile/Cell number</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">
-									<input type="text" name="contactNumber" id="" class="student-create" placeholder="Mobile/Cell Number" required>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row content-section-row-card">
-								<div class="content-section-row-label content-section-row-label-card">gender</div>
-								<div id="" class="content-section-row-field content-section-row-field-card">
-									<select name="gender" id="student-create-gender" class="student-create" required>
-										<option value="">-- Select --</option>
-										<option value="female">Female</option>
-										<option value="male">Male</option>
-									</select>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row">
-								<div class="content-section-row-label">date of birth</div>
-								<div id="" class="content-section-row-field">
-									<input type="date" name="dob" id="student-create-dob" class="student-create" required>
-								</div>
-							</div>
-							<!-- Row End -->
-							<!-- Content: New Row -->
-							<div class="content-section-row">
-								<div class="content-section-row-label"></div>
-								<div id="" class="content-section-row-field">
-									<button type="submit" value="Submit" class="button button-blue">Add Student</button>
-								</div>
-							</div>
-							<!-- Row End -->
-						</form>
-					</div>
-					<div class="content-section-right">
-						<!-- Content: New Row -->
-						<div class="content-section-profile">
-							<div class="content-section-profile-image">
-								<div class="content-section-profile-image-pic">
-									<i class="fas fa-camera"></i>
-									<div class="content-section-profile-text">student id photo</div>
-								</div>
-							</div>
-							<div class="content-section-profile-icons">
-								<div>
-									<i title="Please upload your student id photo that clearly shows your face." class="fas fa-info-circle"></i>
-								</div>
-								<div>
-									<i class="fas fa-plus-square"></i>
-									<i class="fas fa-trash-alt"></i>
-								</div>
-							</div>
-						</div>
-						<!-- Row End -->
-					</div>
-				</div>
+
+				<!-- **************** -->
+				<!-- the  part of taking input written by syeda -->
+
+
+				<div class="content-section-header"><h3>Add names of student</h3></div>
+				<p>Enter the students name:</p><br>
+
+				<!-- text field for taking the input -->
+
+				<textarea id="name"></textarea><br>
+				<button id="submit">Submit</button>
 			</div>
+		 
+			<!-- this div is holding an empty place for showing each pair. which will be updated with pairs once we click submit button -->
+			<h2>Pairs:</h2><br>
+			<div id="pairs"></div>
 			<!-- Section End -->
 		</div>
 	</div>
+	<script src="students.js"></script>
 
-	<!-- Footer
-	================================================== -->	
+<!-- **************************************************** -->
 
-	<!-- This page does not contain a footer -->
 
 </body>
 </html>
